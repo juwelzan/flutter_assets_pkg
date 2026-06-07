@@ -8,10 +8,10 @@ void main() {
     WidgetTester tester,
   ) async {
     await tester.pumpWidget(
-      const MaterialApp(
+      MaterialApp(
         home: Scaffold(
-          body: ShowAssetsImage<String>(
-            image: 'https://example.com/test.jpg',
+          body: FlutterAssetsImage(
+            imagePath: BkashAssets.bkash_to_bank,
             width: 200,
             height: 200,
           ),
@@ -26,9 +26,9 @@ void main() {
 
   testWidgets('ShowAssetsImage test', (WidgetTester tester) async {
     await tester.pumpWidget(
-      const MaterialApp(
+      MaterialApp(
         home: Scaffold(
-          body: ShowAssetsImage<String>(image: 'https://example.com/test.jpg'),
+          body: FlutterAssetsImage(imagePath: BkashAssets.bkash_to_bank),
         ),
       ),
     );

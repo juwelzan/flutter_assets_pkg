@@ -1,5 +1,4 @@
 class BkashAssets {
-  BkashAssets._();
   static const String base =
       "https://cdn.jsdelivr.net/gh/juwelzan/assets_pkg@main";
   static const String sendMoney = "$base/jpg/bkash/request_money.jpg";

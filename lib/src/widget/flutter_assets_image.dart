@@ -1,16 +1,16 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-class ShowAssetsImage<T> extends StatelessWidget {
-  final T image;
+class FlutterAssetsImage extends StatelessWidget {
+  final String imagePath;
   final double? height, width;
   final Alignment alignment;
   final Color? color;
   final BoxFit? fit;
 
-  const ShowAssetsImage({
+  const FlutterAssetsImage({
     super.key,
-    required this.image,
+    required this.imagePath,
     this.height,
     this.width,
     this.alignment = .center,
@@ -30,7 +30,7 @@ class ShowAssetsImage<T> extends StatelessWidget {
       errorWidget: (context, url, error) => Icon(Icons.broken_image),
       placeholder: (context, url) => CircularProgressIndicator(),
 
-      imageUrl: image.toString(),
+      imageUrl: imagePath,
     );
   }
 }
