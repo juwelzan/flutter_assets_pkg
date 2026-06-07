@@ -1,5 +1,5 @@
 name: flutter_assets_pkg
-description: "A new Flutter package project."
+description: "A Flutter package for displaying network images using predefined asset URLs and reusable widgets."
 version: 0.0.1
 
 repository: https://github.com/juwelzan/flutter_assets_pkg.git
